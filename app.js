@@ -9,6 +9,8 @@ app.get('/', (request, response) => {
   response.send(result)
 })
 
-app.listen(3000)
+app.listen(3000, () => {
+  console.log('Running')
+})
 
 module.exports = app
